@@ -1,2 +1,2 @@
-# UCLAGo
-A clone of PokemonGo centered around UCLA campus. 
+# Bruinmon
+A student project for CS M117 where we attempt to create a game similar to Pokemon GO

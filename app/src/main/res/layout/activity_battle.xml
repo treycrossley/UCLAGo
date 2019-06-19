@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.bruinmon.BattleActivity"
+    tools:ignore="ContentDescription,HardcodedText">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/opponent_bruin_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Opponent Bruin Name"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/opponent_bruin_image"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:layout_below="@id/opponent_bruin_name"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            app:srcCompat="@android:drawable/ic_menu_info_details" />
+
+        <TextView
+            android:id="@+id/opponent_bruin_hp_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10/10 HP"
+            android:layout_below="@id/opponent_bruin_image"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textSize="12sp" />
+
+        <ProgressBar
+            android:id="@+id/opponent_bruin_hp_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="128sp"
+            android:layout_height="16sp"
+            android:layout_below="@id/opponent_bruin_hp_text"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:id="@+id/player_bruin_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Bruin Name"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/player_bruin_image"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:layout_below="@id/player_bruin_name"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:scaleX="-1"
+            app:srcCompat="@android:drawable/ic_menu_info_details" />
+
+        <TextView
+            android:id="@+id/player_bruin_hp_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10/10 HP"
+            android:layout_below="@id/player_bruin_image"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textSize="12sp" />
+
+        <ProgressBar
+            android:id="@+id/player_bruin_hp_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="80sp"
+            android:layout_height="16sp"
+            android:layout_below="@id/player_bruin_hp_text"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/battle_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/player_bruin_hp_bar"
+            android:layout_centerHorizontal="true"
+            android:text="Choose which move to use"
+            android:textAlignment="center"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/button_move1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/battle_description"
+            android:text="Move 1"
+            android:onClick="useMove1" />
+
+        <Button
+            android:id="@+id/button_move2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/button_move1"
+            android:text="Move 2"
+            android:onClick="useMove2" />
+
+        <Button
+            android:id="@+id/button_move3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/button_move2"
+            android:text="Move 3"
+            android:onClick="useMove3" />
+
+        <Button
+            android:id="@+id/button_move4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/button_move3"
+            android:text="Move 4"
+            android:onClick="useMove4" />
+
+    </RelativeLayout>
+</ScrollView>

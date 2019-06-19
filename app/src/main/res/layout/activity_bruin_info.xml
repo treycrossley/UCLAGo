@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.bruinmon.BruinInfoActivity"
+    tools:ignore="ContentDescription,HardcodedText">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/bruin_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bruin Name"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/bruin_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/ic_menu_info_details" />
+
+        <TextView
+            android:id="@+id/bruin_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Type"
+            android:textAlignment="center"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/bruin_desc_title"
+            android:layout_width="match_parent"
+            android:layout_height="24sp"
+            android:layout_gravity="start"
+            android:text="Description"
+            android:textAlignment="textStart"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/bruin_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bruin Description"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/bruin_where_title"
+            android:layout_width="match_parent"
+            android:layout_height="24sp"
+            android:layout_gravity="start"
+            android:text="Location"
+            android:textAlignment="textStart"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/bruin_where"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bruin Location"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/bruin_moves_title"
+            android:layout_width="match_parent"
+            android:layout_height="24sp"
+            android:layout_gravity="start"
+            android:text="Moves"
+            android:textAlignment="textStart"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/bruin_move1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Move 1 Name - Type"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/bruin_move2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Move 2 Name - Type"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/bruin_move3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Move 3 Name - Type"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/bruin_move4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Move 4 Name - Type"
+            android:textAlignment="center" />
+    </LinearLayout>
+</ScrollView>
